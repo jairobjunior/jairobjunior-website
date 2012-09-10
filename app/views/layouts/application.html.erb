@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= content_for?(:title) ? yield(:title) : "Jairbjunior" %></title>
+    <%= csrf_meta_tags %>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]-->
+
+    <%= stylesheet_link_tag "application", :media => "all" %>
+
+    <!-- For third-generation iPad with high-resolution Retina display: -->
+    <!-- Size should be 144 x 144 pixels -->
+    <%= favicon_link_tag 'images/apple-touch-icon-144x144-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '144x144' %>
+
+    <!-- For iPhone with high-resolution Retina display: -->
+    <!-- Size should be 114 x 114 pixels -->
+    <%= favicon_link_tag 'images/apple-touch-icon-114x114-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '114x114' %>
+
+    <!-- For first- and second-generation iPad: -->
+    <!-- Size should be 72 x 72 pixels -->
+    <%= favicon_link_tag 'images/apple-touch-icon-72x72-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '72x72' %>
+
+    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+    <!-- Size should be 57 x 57 pixels -->
+    <%= favicon_link_tag 'images/apple-touch-icon-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png' %>
+
+    <!-- For all other devices -->
+    <!-- Size should be 32 x 32 pixels -->
+    <%= favicon_link_tag 'images/favicon.ico', :rel => 'shortcut icon' %>
+  </head>
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">Jairbjunior</a>
+          <div class="container nav-collapse">
+            <ul class="nav">
+              <li><%= link_to "Link1", "/path1"  %></li>
+              <li><%= link_to "Link2", "/path2"  %></li>
+              <li><%= link_to "Link3", "/path3"  %></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="content">
+        <div class="row">
+           <div class="span9">
+              <%= yield %>
+            </div>
+            <div class="span3">
+              <div class="well sidebar-nav">
+                <h3>Sidebar</h3>
+                <ul class="nav nav-list">
+                  <li class="nav-header">Sidebar</li>
+                  <li><%= link_to "Link1", "/path1"  %></li>
+                  <li><%= link_to "Link2", "/path2"  %></li>
+                  <li><%= link_to "Link3", "/path3"  %></li>
+                </ul>
+              </div><!--/.well -->
+            </div><!--/span-->
+        </div><!--/row-->
+      </div><!--/content-->
+
+      <footer>
+        <div id="footer-menu" class="row-fluid">          
+          <nav class="span3 menu">
+            <ul>
+              <li><a href="#" class="home">HOME</a></li>
+              <li><a href="#" class="blog">BLOG</a></li>
+              <li><a href="#" class="labs">LABS</a></li>
+              <li class="last"><a href="#" class="get-in-touch">GET IN TOUCH</a></li>
+            </ul>
+          </nav>
+          <div class="span2">
+            <span class="legend">Technical Skills</span>
+            <span class="label label-warning">JS</span>
+            <span class="label label-warning">AS3</span>
+            <span class="label label-warning">HTML5</span>
+            <span class="label label-warning">Flex</span>
+            <span class="label label-warning">PHP</span>
+            <span class="label label-warning">Java</span>
+            <span class="label label-warning">GWT</span>
+            <span class="label label-warning">Ruby on Rails</span>
+          </div>
+          <div class="span4 about-me">
+            <span class="legend">About Me</span>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+          </div>
+          <div class="span3">
+            <form>
+              <fieldset>
+                <legend>Get In Touch</legend>
+                <input type="text" placeholder="Name...">
+                <input type="text" placeholder="Email...">
+                <textarea rows="3" placeholder="Let me know..." style="margin-bottom: 0px"></textarea>
+                <p class="label-required">All fields required</p>
+                <button class="btn btn-small btn-success" type="button">Send</button>
+              </fieldset>
+            </form>
+          </div>
+		    </div>
+		    <div class="row-fluid stay-in-touch-bar">
+          <div class="stay-in-touch">
+            <ul>
+              <li class="legend-social-media"><p>Stay In Touch:</p></li>
+              <li><a href="https://twitter.com/jairobjunior" target="_blank" class="twitter">twitter</a></li>
+              <li><a href="http://www.facebook.com/jairobjunior" target="_blank" class="facebook">facebook</a></li>
+              <li><a href="https://twitter.com/jairobjunior" target="_blank" class="rss-blog">rss-blog</a></li>
+              <li><a href="http://www.linkedin.com/in/jairobjunior/en" target="_blank" class="linkedin">linkedin</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <!-- Javascripts
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <%= javascript_include_tag "application" %>
+
+  </body>
+</html>
