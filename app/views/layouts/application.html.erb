@@ -59,18 +59,57 @@
     <div class="container">
       <div class="content">
         <div class="row">
+          <div class="span12">            
+            <ul class="languages">
+              <li><a href="" class="portuguese selected">PORTUGUES</a></li>
+              <li><a href="" class="english">ENGLISH</a></li>
+            </ul>  
+          </div>
+        </div>  
+        <div class="row">
+          <div class="span4">
+            <%= yield %>
+          </div>
+          <div class="span4">
+            <%= yield %>
+          </div>
+          <div class="span4 head-right">
+            <div>
+              <div class="name">
+                <p class="first">jairo</p>
+                <p class="last">bjunior</p>
+              </div>            
+              <div class="social-media">
+                <ul>
+                  <li><a href="https://twitter.com/jairobjunior" target="_blank" class="twitter">twitter</a></li>
+                  <li><a href="http://www.facebook.com/jairobjunior" target="_blank" class="facebook">facebook</a></li>
+                  <li><a href="http://www.linkedin.com/in/jairobjunior/en" target="_blank" class="linkedin">linkedin</a></li>
+                </ul>
+              </div> 
+            </div>       
+            <div>
+              <nav>
+                <ul>
+                  <li>Blog</li>
+                  <li>Labs</li>
+                  <li>Get In Touch</li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>  
+        <div class="row">
            <div class="span9">
               <%= yield %>
             </div>
             <div class="span3">
-              <div class="well sidebar-nav">
-                <h3>Sidebar</h3>
-                <ul class="nav nav-list">
-                  <li class="nav-header">Sidebar</li>
-                  <li><%= link_to "Link1", "/path1"  %></li>
-                  <li><%= link_to "Link2", "/path2"  %></li>
-                  <li><%= link_to "Link3", "/path3"  %></li>
-                </ul>
+              <div class="sidebar-nav">
+                <h4>education</h4>
+                <p class="text-right-bar">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+              </div><!--/.well -->
+              <div class="sidebar-nav">
+                <h4>awards</h4>
+                <p class="text-right-bar">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p
               </div><!--/.well -->
             </div><!--/span-->
         </div><!--/row-->
@@ -99,7 +138,7 @@
           </div>
           <div class="span4 about-me">
             <span class="legend">About Me</span>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<p>
           </div>
           <div class="span3">
             <form>

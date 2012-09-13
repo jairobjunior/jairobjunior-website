@@ -17,6 +17,10 @@ ol, ul {
 	list-style: none;
 }
 
+p {
+	font-size: 11px;
+}
+
 footer {
 	color: #fff;
 	font-family: "Trebuchet MS", sans-serif;
@@ -61,8 +65,7 @@ footer nav.menu a:hover {
 }
 
 footer nav.menu, .about-me {
-	color: #989898;
-	font-size: 11px;
+	color: #989898;	
 }
 
 footer nav a.home {
@@ -125,9 +128,12 @@ footer div.stay-in-touch a {
 }
 
 footer div.stay-in-touch li.legend-social-media {
-	font-size: 14px;
 	text-indent: 0px;
 	width: 100px;
+}
+
+footer div.stay-in-touch p {
+	font-size: 14px;
 }
 
 footer div.stay-in-touch li {
@@ -168,6 +174,118 @@ footer div.stay-in-touch li a.linkedin {
 
 footer div.stay-in-touch li a.linkedin:hover {
 	background: url('sprite.png') no-repeat -75px -266px;
+}
+
+.container .content {
+	background-image: url('bg.png');
+}
+
+.text-right-bar {
+	color: #000;
+	padding-right: 15px;
+}
+
+.languages {
+	float: right;
+	display: block;
+}
+
+.languages li {
+	float: left;
+	padding-top: 10px;
+	padding-right: 20px;
+}
+
+.languages li a {
+	display: block;
+	height: 23px;
+	font-size: 11px;
+	color: #989898;
+	padding-left: 30px;
+	text-decoration: none;
+}
+
+.languages li a.selected {
+	color: #000;
+}
+
+.languages li a.portuguese {	
+	background: url('sprite.png') no-repeat 0px -336px;
+}
+
+.languages li a.portuguese.selected {	
+	background: url('sprite.png') no-repeat 0px -291px;
+}
+
+.languages li a.english {
+	background: url('sprite.png') no-repeat 0px -358px;
+}
+
+.languages li a.english.selected {
+	background: url('sprite.png') no-repeat 0px -314px;
+}
+
+.head-right .name {	
+	color: #fff;
+	width: 200px;
+	float: left;
+}
+
+.head-right .social-media {
+	margin-left: 185px;
+	padding-top: 5px;
+}
+
+.head-right .name p {
+	background-color: #000;
+	font-size: 60px;
+	padding: 5px 5px 5px 5px;
+	float: right;
+	height: 50px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.head-right .name p.first {
+	text-align: right;	
+	padding-top: 20px;
+	margin: 0 0 -11px;
+}
+
+.head-right .name p.last {
+	text-align: right;
+}
+
+.head-right li a {
+	display: block;
+	text-indent: -9999px;
+	width: 31px;
+	height: 31px;
+	margin-bottom: 10px;
+}
+
+.head-right li a.twitter {	
+	background: url('sprite.png') no-repeat 0px -1px;
+}
+
+.head-right li a.twitter:hover {	
+	background: url('sprite.png') no-repeat 0px -32px;
+}
+
+.head-right li a.facebook {	
+	background: url('sprite.png') no-repeat -30px -1px;
+}
+
+.head-right li a.facebook:hover {	
+	background: url('sprite.png') no-repeat -30px -32px;
+}
+
+.head-right li a.linkedin {	
+	background: url('sprite.png') no-repeat -60px -1px;
+}
+
+.head-right li a.linkedin:hover {	
+	background: url('sprite.png') no-repeat -60px -32px;
 }
 
 .label-required {
