@@ -288,6 +288,15 @@ footer div.stay-in-touch li a.linkedin:hover {
 	background: url('sprite.png') no-repeat -60px -32px;
 }
 
+.top-menu {
+	background-color: #000;
+	float: left;
+}
+
+.top-menu ul li {
+	float: left;
+}
+
 .label-required {
 	font-size: 10px;
 	text-align: right;
